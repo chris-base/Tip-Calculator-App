@@ -1,0 +1,135 @@
+@import 'colors';
+
+html {
+	background-color: $Light-grayish-cyan-one;
+	font-family: 'Space Mono';
+	font-size: 15px;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.main-sections {
+	margin: 20px 20px 10px 30px;
+}
+
+.input-section {
+	margin: 0px 0px 30px 0px;
+}
+
+.title-of-section-text {
+	color: $Very-dark-cyan;
+	margin-bottom: 5px;
+}
+
+#logo-container {
+	margin-top: 100px;
+}
+
+#app-container {
+	display: grid;
+	margin-top: 50px;
+	grid-template-columns: 52% 48%;
+	width: 750px;
+	height: auto;
+	background-color: $White;
+	border-radius: 15px;
+	box-shadow: 0 10px 20px $Dark-grayish-cyan-two;
+}
+
+.input-container-bill-number-of-people {
+	background-color: $Light-grayish-cyan-two;
+	padding: 1px 0px 1px 10px;
+	border-radius: 5px;
+}
+
+.input {
+	background-color: transparent;
+	border: 0;
+	width: 90%;
+	margin-right: 0;
+	text-align: right;
+	font-size: 24px;
+	font-family: 'Space Mono';
+	color: $Very-dark-cyan;
+	outline: none;
+}
+
+#select-tip-buttons-container {
+	display: grid;
+	gap: 17px;
+	grid-template-columns: 30% 30% 30%;
+}
+
+.select-tip-buttons {
+	background-color: $Very-dark-cyan;
+	color: $White;
+	border: 0;
+	border-radius: 5px;
+	padding: 5px;
+	font-family: 'Space Mono';
+	font-size: 20px;
+	cursor: pointer;
+}
+
+#custom-button {
+	background-color: $Light-grayish-cyan-two;
+	color: $Very-dark-cyan;
+}
+
+#main-output-container {
+	background-color: $Very-dark-cyan;
+	border-radius: 10px;
+	margin-bottom: 40px;
+}
+
+#tip-amount-total-text-container {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	margin: 30px 30px 0 30px;
+}
+
+.tip-total-text {
+	color: $Light-grayish-cyan-two;
+	margin-bottom: 30px;
+}
+
+.main-person-text {
+	margin: auto auto 0px auto;
+	font-size: 14px;
+}
+
+.slash-person-text {
+	margin-top: 0px;
+	color: $Dark-grayish-cyan-two;
+	font-size: 12px;
+}
+
+.tip-total-cash {
+	color: $Strong-cyan;
+	font-size: 35px;
+	font-weight: 600;
+	margin-top: -10px;
+}
+
+#reset-button-container {
+	margin: 75px 30px 15px 30px;
+}
+
+#reset-button {
+	width: 100%;
+	height: 100%;
+	padding: 7px 10px 7px 10px;
+	background-color: $Strong-cyan;
+	border: 0;
+	border-radius: 5px;
+	font-family: 'Space Mono';
+	font-size: 20px;
+	font-weight: 600;
+	color: $Very-dark-cyan;
+	cursor: pointer;
+}

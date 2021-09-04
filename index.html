@@ -3,6 +3,9 @@
 
 <link rel="icon" href="./assets/favicon-32x32.png" type="image/x-icon">
 <link rel="stylesheet" href="styles.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 
 <head>
 	<meta charset="UTF-8">
@@ -12,6 +15,79 @@
 </head>
 
 <body>
+
+	<!-- Title Text -->
+	<div id='logo-container'>
+		<img src="./assets/logo.svg" />
+	</div>
+
+	<!-- Main app container -->
+	<div id='app-container'>
+
+		<!-- Start of input container -->
+
+		<div class='main-sections' id='main-input-container'>
+
+			<div class='input-section' id='bill-subtotal-container'>
+				<p class='title-of-section-text'>Bill</p>
+				<div class='input-container-bill-number-of-people' id='bill-subtotal-input-container'>
+					<img src='./assets/icon-dollar.svg'>
+					<input type='text' class='input' id='bill-subtotal-input' />
+				</div>
+			</div>
+
+			<div class='input-section' id='select-tip-container'>
+				<p class='title-of-section-text'>Select Tip %</p>
+				<div id='select-tip-buttons-container'>
+					<button class='select-tip-buttons' id='five-button'>5%</button>
+					<button class='select-tip-buttons' id='ten-button'>10%</button>
+					<button class='select-tip-buttons' id='fifteen-button'>15%</button>
+					<button class='select-tip-buttons' id='twenty-five-button'>25%</button>
+					<button class='select-tip-buttons' id='fifty-button'>50%</button>
+					<button class='select-tip-buttons' id='custom-button'>Custom</button>
+				</div>
+			</div>
+
+			<div class='input-section' id='number-people-container'>
+				<p class='title-of-section-text'>Number of People</p>
+				<div class='input-container-bill-number-of-people' id='number-people-input-container'>
+					<img src='./assets/icon-person.svg' />
+					<input type='text' class='input' id='number-people-input' />
+				</div>
+			</div>
+		</div>
+
+		<!-- End of input container -->
+		<!-- Start of output container -->
+
+		<div class='main-sections' id='main-output-container'>
+
+			<div id='calc-container'>
+				<div id='tip-amount-total-text-container'>
+					<div class='tip-total-text'>
+						<p class='main-person-text'>Tip Amount</p>
+						<p class='slash-person-text'>/ person</p>
+					</div>
+					<div class='tip-total-cash'>$0.00</div>
+					<div class='tip-total-text'>
+						<p class='main-person-text'>Total</p>
+						<p class='slash-person-text'>/ person</p>
+					</div>
+					<div class='tip-total-cash'>$0.00</div>
+				</div>
+
+				<div id='reset-button-container'>
+					<button id='reset-button'>RESET</button>
+				</div>
+
+
+			</div>
+
+		</div>
+
+		<!-- End of output container -->
+
+	</div>
 
 </body>
 
