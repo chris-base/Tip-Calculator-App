@@ -14,6 +14,8 @@ This is a solution to the [Tip calculator app challenge on Frontend Mentor](http
 
 ## Overview
 
+This challenge was to create a tip calculator to calculate how much a person/persons will pay when the user provides the bill total, the amount of tip they wish to leave, and how many people the bill is going to be spread to.
+
 ### The challenge
 
 Users should be able to:
@@ -24,12 +26,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./assets/Tip-Calculator-Chris-base-screenshot.png)
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Live Site URL: [Live Site](https://chris-base.github.io/Tip-Calculator-App/)
+- Solution URL: [My Solution](https://www.frontendmentor.io/solutions/tip-calculator-app-made-with-html-sass-and-javascript-3NI5t3f8H)
 
 ### Built with
 
@@ -42,6 +44,8 @@ Users should be able to:
 - JavaScript
 
 ### What I learned
+
+I learned a lot about how to manipulate DOM elements and adding functionionality to buttons/data being passed by the user.
 
 ## Author
 

@@ -68,6 +68,8 @@ body {
   font-family: 'Space Mono';
   color: #00494d;
   outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
 }
 
 #select-tip-buttons-container {
@@ -89,9 +91,10 @@ body {
   cursor: pointer;
 }
 
-#custom-button {
+#custom-input {
   background-color: #edf6f7;
   color: #00494d;
+  text-align: center;
 }
 
 #main-output-container {
@@ -153,6 +156,9 @@ body {
 @media (max-width: 850px) {
   #app-container {
     width: 550px;
+  }
+  .tip-total-cash {
+    font-size: 28px;
   }
 }
 

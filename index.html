@@ -32,19 +32,20 @@
 				<p class='title-of-section-text'>Bill</p>
 				<div class='input-container-bill-number-of-people' id='bill-subtotal-input-container'>
 					<img src='./assets/icon-dollar.svg'>
-					<input type='text' class='input' id='bill-subtotal-input' />
+					<input type='number' class='input' id='bill-subtotal-input' placeholder='0' onkeyup='updateBillInput()' />
 				</div>
 			</div>
 
 			<div class='input-section' id='select-tip-container'>
 				<p class='title-of-section-text'>Select Tip %</p>
 				<div id='select-tip-buttons-container'>
-					<button class='select-tip-buttons' id='five-button'>5%</button>
-					<button class='select-tip-buttons' id='ten-button'>10%</button>
-					<button class='select-tip-buttons' id='fifteen-button'>15%</button>
-					<button class='select-tip-buttons' id='twenty-five-button'>25%</button>
-					<button class='select-tip-buttons' id='fifty-button'>50%</button>
-					<button class='select-tip-buttons' id='custom-button'>Custom</button>
+					<button class='select-tip-buttons' id='five-button' onclick='selectTipOnClick(this)'>5%</button>
+					<button class='select-tip-buttons' id='ten-button' onclick='selectTipOnClick(this)'>10%</button>
+					<button class='select-tip-buttons' id='fifteen-button' onclick='selectTipOnClick(this)'>15%</button>
+					<button class='select-tip-buttons' id='twenty-five-button' onclick='selectTipOnClick(this)'>25%</button>
+					<button class='select-tip-buttons' id='fifty-button' onclick='selectTipOnClick(this)'>50%</button>
+					<input class='select-tip-buttons' id='custom-input' placeholder='Custom' type="text" pattern="\d*"
+						maxlength="4" onkeyup='setCustomPercent()' />
 				</div>
 			</div>
 
@@ -52,7 +53,8 @@
 				<p class='title-of-section-text'>Number of People</p>
 				<div class='input-container-bill-number-of-people' id='number-people-input-container'>
 					<img src='./assets/icon-person.svg' />
-					<input type='text' class='input' id='number-people-input' />
+					<input type='number' class='input' id='number-people-input' placeholder='0'
+						onkeyup='updateNumberOfPeople()' />
 				</div>
 			</div>
 		</div>
@@ -68,16 +70,16 @@
 						<p class='main-person-text'>Tip Amount</p>
 						<p class='slash-person-text'>/ person</p>
 					</div>
-					<div class='tip-total-cash'>$0.00</div>
+					<div class='tip-total-cash' id='tip-amount-cash'>$0.00</div>
 					<div class='tip-total-text'>
 						<p class='main-person-text'>Total</p>
 						<p class='slash-person-text'>/ person</p>
 					</div>
-					<div class='tip-total-cash'>$0.00</div>
+					<div class='tip-total-cash' id='total-amount-cash'>$0.00</div>
 				</div>
 
 				<div id='reset-button-container'>
-					<button id='reset-button'>RESET</button>
+					<button id='reset-button' onclick='resetButtonClicked()'>RESET</button>
 				</div>
 
 
@@ -88,6 +90,13 @@
 		<!-- End of output container -->
 
 	</div>
+
+	<div class="attribution" style='margin-top: 20px'>
+		Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+		Coded by <a href="https://github.com/chris-base" target="_blank">Chris Base</a>.
+	</div>
+
+	<script src="script.js"></script>
 
 </body>
 
